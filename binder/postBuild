@@ -32,3 +32,23 @@ mv 		 kafka_2.12-${KAFKA_VERSION}	kafka-${KAFKA_VERSION}
 # adding bin/ to $path
 echo "export PATH=\$PATH:\$KAFKA_HOME/bin"   >> ~/.bashrc
 echo "export PATH=\$PATH:\$KAFKA_HOME/bin"   >> ~/.profile
+
+###############################################################
+#                 spark-related commands                      #
+###############################################################
+export SPARK_VERSION=3.0.0
+echo "export SPARK_VERSION=${SPARK_VERSION}" >> ~/.bashrc
+echo "export SPARK_VERSION=${SPARK_VERSION}" >> ~/.profile
+
+export SPARK_HOME=$(pwd)/spark-${SPARK_VERSION}
+echo "export SPARK_HOME=${SPARK_HOME}" >> ~/.bashrc
+echo "export SPARK_HOME=${SPARK_HOME}" >> ~/.profile
+
+wget http://ftp.unicamp.br/pub/apache/spark/spark-${SPARK_VERSION}-preview2/spark-${SPARK_VERSION}-preview2-bin-hadoop2.7.tgz               && \
+tar -xvf spark-${SPARK_VERSION}-preview2-bin-hadoop2.7.tgz > /dev/null 										 		              && \
+rm       spark-${SPARK_VERSION}-preview2-bin-hadoop2.7.tgz															              && \
+mv 		 spark-${SPARK_VERSION}-preview2-bin-hadoop2.7	spark-${SPARK_VERSION}
+
+# adding bin/ to $path
+echo "export PATH=\$PATH:\$SPARK_HOME/bin"   >> ~/.bashrc
+echo "export PATH=\$PATH:\$SPARK_HOME/bin"   >> ~/.profile
