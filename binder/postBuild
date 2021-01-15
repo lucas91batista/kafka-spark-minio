@@ -1,0 +1,7 @@
+#!/bin/bash
+
+###############################################################
+#          jupyter/jupyterlab extensions/kernels              #
+###############################################################
+
+jupyter labextension install jupyter-offlinenotebook
