@@ -1,1 +1,5 @@
-wget
+htop
+net-tools
+openjdk-8-jdk
+ssh
+vim
