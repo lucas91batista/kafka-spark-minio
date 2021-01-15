@@ -16,7 +16,7 @@ cd    ~/resources/local
 ###############################################################
 #                 kafka-related commands                      #
 ###############################################################
-export KAFKA_VERSION=2.3.0
+export KAFKA_VERSION=2.7.0
 echo "export KAFKA_VERSION=${KAFKA_VERSION}" >> ~/.bashrc
 echo "export KAFKA_VERSION=${KAFKA_VERSION}" >> ~/.profile
 
@@ -36,7 +36,7 @@ echo "export PATH=\$PATH:\$KAFKA_HOME/bin"   >> ~/.profile
 ###############################################################
 #                 spark-related commands                      #
 ###############################################################
-export SPARK_VERSION=3.0.0
+export SPARK_VERSION=3.0.1
 echo "export SPARK_VERSION=${SPARK_VERSION}" >> ~/.bashrc
 echo "export SPARK_VERSION=${SPARK_VERSION}" >> ~/.profile
 
