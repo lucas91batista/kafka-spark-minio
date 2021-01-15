@@ -53,3 +53,8 @@ mv 		 spark-${SPARK_VERSION}-bin-hadoop2.7	spark-${SPARK_VERSION}
 # adding bin/ to $path
 echo "export PATH=\$PATH:\$SPARK_HOME/bin"   >> ~/.bashrc
 echo "export PATH=\$PATH:\$SPARK_HOME/bin"   >> ~/.profile
+
+###############################################################
+#                 minio-related commands                      #
+###############################################################
+wget https://dl.min.io/server/minio/release/linux-amd64/minio
