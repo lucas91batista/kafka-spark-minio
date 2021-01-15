@@ -44,7 +44,7 @@ export SPARK_HOME=$(pwd)/spark-${SPARK_VERSION}
 echo "export SPARK_HOME=${SPARK_HOME}" >> ~/.bashrc
 echo "export SPARK_HOME=${SPARK_HOME}" >> ~/.profile
 
-wget http://ftp.unicamp.br/pub/apache/spark/spark-${SPARK_VERSION}-preview2/spark-${SPARK_VERSION}-preview2-bin-hadoop2.7.tgz               && \
+wget https://www.apache.org/dyn/closer.lua/spark/spark-${SPARK_VERSION}/spark-${SPARK_VERSION}-bin-hadoop2.7.tgz               && \
 tar -xvf spark-${SPARK_VERSION}-preview2-bin-hadoop2.7.tgz > /dev/null 										 		              && \
 rm       spark-${SPARK_VERSION}-preview2-bin-hadoop2.7.tgz															              && \
 mv 		 spark-${SPARK_VERSION}-preview2-bin-hadoop2.7	spark-${SPARK_VERSION}
