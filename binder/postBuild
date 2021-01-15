@@ -10,6 +10,7 @@ jupyter labextension install jupyter-offlinenotebook
 #             moving to a local installation folder           #
 ###############################################################
 
+mkdir ~/resources/
 mkdir ~/resources/local
 cd    ~/resources/local
 
@@ -45,9 +46,9 @@ echo "export SPARK_HOME=${SPARK_HOME}" >> ~/.bashrc
 echo "export SPARK_HOME=${SPARK_HOME}" >> ~/.profile
 
 wget https://www.apache.org/dyn/closer.lua/spark/spark-${SPARK_VERSION}/spark-${SPARK_VERSION}-bin-hadoop2.7.tgz               && \
-tar -xvf spark-${SPARK_VERSION}-preview2-bin-hadoop2.7.tgz > /dev/null 										 		              && \
-rm       spark-${SPARK_VERSION}-preview2-bin-hadoop2.7.tgz															              && \
-mv 		 spark-${SPARK_VERSION}-preview2-bin-hadoop2.7	spark-${SPARK_VERSION}
+tar -xvf spark-${SPARK_VERSION}-bin-hadoop2.7.tgz > /dev/null 										 		              && \
+rm       spark-${SPARK_VERSION}-bin-hadoop2.7.tgz															              && \
+mv 		 spark-${SPARK_VERSION}-bin-hadoop2.7	spark-${SPARK_VERSION}
 
 # adding bin/ to $path
 echo "export PATH=\$PATH:\$SPARK_HOME/bin"   >> ~/.bashrc
