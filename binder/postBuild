@@ -58,3 +58,4 @@ echo "export PATH=\$PATH:\$SPARK_HOME/bin"   >> ~/.profile
 #                 minio-related commands                      #
 ###############################################################
 wget https://dl.min.io/server/minio/release/linux-amd64/minio
+wget https://dl.min.io/client/mc/release/linux-amd64/mc
