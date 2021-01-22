@@ -3,6 +3,7 @@
 chmod +x ~/binder/start.zookeeper
 chmod +x ~/binder/start.kafka
 chmod +x ~/resources/local/minio
+chmod +x ~/resources/local/mc
 
 
 ~/binder/start.zookeeper    && \
