@@ -1,0 +1,18 @@
+#!/bin/bash
+
+chmod +x ~/binder/start.zookeeper
+chmod +x ~/binder/start.kafka
+chmod +x ~/resources/local/minio
+
+
+~/binder/start.zookeeper    && \
+sleep 3                		&& \
+~/binder/start.kafka   		&& \
+sleep 3                		&& \
+~/binder/start.minio         	&
+
+
+
+# DO NOT REMOVE(!) 
+# Here is why: https://mybinder.readthedocs.io/en/latest/config_files.html#start-run-code-before-the-user-sessions-starts
+exec "$@"
