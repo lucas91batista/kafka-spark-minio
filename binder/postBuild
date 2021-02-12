@@ -83,5 +83,5 @@ echo "export AIRFLOW_HOME=${AIRFLOW_HOME}" >> ~/.profile
 
 jupyter labextension install jupyter-offlinenotebook
 jupyter labextension install jupyterlab-server-proxy
-#jupyter labextension install @jupyterlab/server-proxy
+jupyter labextension install @jupyterlab/server-proxy
 jupyter lab build
