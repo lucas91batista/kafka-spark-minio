@@ -1,21 +1,21 @@
 #!/bin/bash
 
-###############################################################
-#          jupyter/jupyterlab extensions/kernels              #
-###############################################################
 
-jupyter labextension install jupyter-offlinenotebook
-#jupyter labextension install jupyterlab-server-proxy
-jupyter labextension install @jupyterlab/server-proxy
-jupyter lab build
 
 ###############################################################
 #             moving to a local installation folder           #
 ###############################################################
+mkdir -p $HOME/.jupyter/
+
+#Although located in binder/,
+# this bash file runs in $HOME rather than $HOME/binder
+mv jupyter_notebook_config.py $HOME/.jupyter/
+mv airflow-logo.png $HOME/.jupyter/
+
 
 mkdir ~/resources/
 mkdir ~/resources/local
-mkdir -p $HOME/.jupyter/
+
 cd    ~/resources/local
 
 ###############################################################
@@ -76,8 +76,12 @@ echo "export AIRFLOW_HOME=${AIRFLOW_HOME}" >> ~/.bashrc
 echo "export AIRFLOW_HOME=${AIRFLOW_HOME}" >> ~/.profile
 
 
-#Although located in binder/,
-# this bash file runs in $HOME rather than $HOME/binder
-mv jupyter_notebook_config.py $HOME/.jupyter/
-mv airflow-logo.png $HOME/.jupyter/
 
+###############################################################
+#          jupyter/jupyterlab extensions/kernels              #
+###############################################################
+
+jupyter labextension install jupyter-offlinenotebook
+jupyter labextension install jupyterlab-server-proxy
+#jupyter labextension install @jupyterlab/server-proxy
+jupyter lab build
