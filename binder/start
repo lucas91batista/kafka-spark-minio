@@ -2,6 +2,7 @@
 
 chmod +x ~/binder/start.zookeeper
 chmod +x ~/binder/start.kafka
+chmod +x ~/binder/start.minio
 chmod +x ~/resources/local/minio
 chmod +x ~/resources/local/mc
 
