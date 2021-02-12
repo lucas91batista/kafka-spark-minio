@@ -2,6 +2,7 @@
 
 chmod +x ~/binder/start.zookeeper
 chmod +x ~/binder/start.kafka
+chmod +x ~/binder/start.airflow
 chmod +x ~/binder/start.minio
 chmod +x ~/resources/local/minio
 chmod +x ~/resources/local/mc
@@ -10,6 +11,8 @@ chmod +x ~/resources/local/mc
 ~/binder/start.zookeeper    && \
 sleep 3                		&& \
 ~/binder/start.kafka   		&& \
+sleep 3                		&& \
+~/binder/start.airflow   		&& \
 sleep 3                		&& \
 ~/binder/start.minio         	&
 
