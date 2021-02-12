@@ -1,7 +1,7 @@
 # Traitlet configuration file for jupyter-notebook.
 
 c.ServerProxy.servers = {
-    'openrefine': {
+    'airflow': {
         'command': ['airflow webserver', '--port', '{port}'],
         'port': 8080,
         'timeout': 120,
