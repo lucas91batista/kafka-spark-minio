@@ -63,3 +63,10 @@ wget https://dl.min.io/client/mc/release/linux-amd64/mc
 # adding mc to $path
 echo "export PATH=\$PATH:\$(pwd)/resources/local/"   >> ~/.bashrc
 echo "export PATH=\$PATH:\$(pwd)/resources/local/"   >> ~/.profile
+
+###############################################################
+#                 airflow-related commands                      #
+###############################################################
+export AIRFLOW_HOME=$(pwd)/airflow
+echo "export AIRFLOW_HOME=${AIRFLOW_HOME}" >> ~/.bashrc
+echo "export AIRFLOW_HOME=${AIRFLOW_HOME}" >> ~/.profile
