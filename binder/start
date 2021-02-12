@@ -12,7 +12,7 @@ chmod +x ~/resources/local/mc
 sleep 3                		&& \
 ~/binder/start.kafka   		&& \
 sleep 3                		&& \
-#~/binder/start.airflow   		&& \
+~/binder/start.airflow   		&& \
 sleep 3                		&& \
 ~/binder/start.minio         	&
 
