@@ -1,6 +1,13 @@
 #!/bin/bash
 
+###############################################################
+#          jupyter/jupyterlab extensions/kernels              #
+###############################################################
 
+jupyter labextension install jupyter-offlinenotebook
+jupyter labextension install jupyterlab-server-proxy
+jupyter labextension install @jupyterlab/server-proxy
+jupyter lab build
 
 ###############################################################
 #             moving to a local installation folder           #
@@ -74,14 +81,3 @@ echo "export PATH=\$PATH:\$(pwd)/resources/local/"   >> ~/.profile
 export AIRFLOW_HOME=$(pwd)/airflow
 echo "export AIRFLOW_HOME=${AIRFLOW_HOME}" >> ~/.bashrc
 echo "export AIRFLOW_HOME=${AIRFLOW_HOME}" >> ~/.profile
-
-
-
-###############################################################
-#          jupyter/jupyterlab extensions/kernels              #
-###############################################################
-
-jupyter labextension install jupyter-offlinenotebook
-jupyter labextension install jupyterlab-server-proxy
-jupyter labextension install @jupyterlab/server-proxy
-jupyter lab build
