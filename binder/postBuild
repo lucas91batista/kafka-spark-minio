@@ -5,6 +5,7 @@
 ###############################################################
 
 jupyter labextension install jupyter-offlinenotebook
+jupyter labextension install jupyterlab-server-proxy
 
 ###############################################################
 #             moving to a local installation folder           #
